@@ -1,4 +1,7 @@
+import requests
 # zad 1
+
+
 def return_string(name: str, surname: str) -> str:
     # Use a breakpoint in the code line below to debug your script.
     return f'Cześć {name} {surname}'  # Press Ctrl+F8 to toggle the breakpoint.
@@ -33,27 +36,31 @@ if jest_parzysta(a):
 else:
     print('liczba nieparzysta')
 
-#zad 4
+
+# zad 4
 def suma_wieksza_lub_rowna_niz(a: int, b: int, c: int) -> bool:
-    if a+b >= c:
+    if a + b >= c:
         return True
 
 
-#zad 5
-def jest_na_liscie(listaliczb: list, b : int ):
+# zad 5
+def jest_na_liscie(listaliczb: list, b: int):
     return listaliczb.__contains__(b)
 
 
-#zad 6
+# zad 6
 def list_append_and_pow(pierwszalista: list, drugalista: list) -> list:
     pierwszalista.extend(drugalista)
     pierwszalista = list(dict.fromkeys(pierwszalista))
-    return [number**3 for number in pierwszalista]
+    return [number ** 3 for number in pierwszalista]
 
-#zad 7
-import requests
+
+# zad 7
+
+
 class Brawery:
     response = requests.get("https://api.openbrewerydb.org/breweries")
+
+
 obiekt = Brawery
 print(obiekt.response.json())
-
