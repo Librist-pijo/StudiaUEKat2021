@@ -1,4 +1,4 @@
-#zad 1
+# zad 1
 
 class Student:
     def __init__(self, name: str, marks: int):
