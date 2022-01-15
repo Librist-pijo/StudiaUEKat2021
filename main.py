@@ -1,4 +1,4 @@
-import HOGPersonDetection
+import HOGPersonDetection as HPD
 
 if __name__ == '__main__':
-    main()
+     HPD.main()
